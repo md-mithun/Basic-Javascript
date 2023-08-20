@@ -13,4 +13,3 @@ window.alert("Hello there 3");
 
 // 4. Writing into the browser console, using console.log().
 console.log('Hello there 4');
-
