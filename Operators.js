@@ -6,9 +6,6 @@ var c = a + b //c=MuhammadMithun
 var x = 12 + "34"; // x=1234
 
 
-
-
-
 /*----Arithmetic----*/
 // +	Addition
 let p = 5 + 6; //p=11
@@ -28,17 +25,14 @@ let v = 5; v++; //v=6
 let w = 5; v--; //w=4
 
 
-
-
 /*----Assignment----*/
-var a = 6;
-x += y //	x = x + y
-x -= y //	x = x - y
-x *= y //	x = x * y
-x /= y //	x = x / y
-x %= y //	x = x % y
-
-
+let m = 6;
+let n = 7;
+m += n //	m = m + n
+m -= n //	m = m - n
+m *= n //	m = m * n
+m /= n //	m = m / n
+m %= n //	m = m % n
 
 
 /*----Comparison----*/
@@ -53,9 +47,6 @@ x %= y //	x = x % y
 <=	less than or equal to
 ?	ternary operator */
 
-
-
-
 /*----Logical----*/
 /*
 &&	logical and
@@ -64,14 +55,9 @@ x %= y //	x = x % y
 */
 
 
-
-
 /*----typeof----*/
 x = 5;
 console.log(typeof x);
-
-
-
 
 
 /*----Bitwise----*/
@@ -85,3 +71,9 @@ console.log(typeof x);
 >>	right shift	12 >> 1	1100 >> 1	0110	  6
 Note: But JavaScript uses 32-bit signed numbers.
 */
+
+// ## Ternary ( = ? :)
+let mark = 41;
+let result = (mark > 40) ? (mark > 79) ? "A+" : "Pass" : "Fail";
+console.log(result);
+
