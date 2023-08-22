@@ -23,7 +23,7 @@ switch (new Date().getDay()) {
         break;
 
     default:
-        day="haha "
+        day="haha !"
         break;
 }
 console.log((day+"day").toUpperCase());
