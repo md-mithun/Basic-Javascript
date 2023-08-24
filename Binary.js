@@ -14,3 +14,11 @@ let a = 11;
 console.log(a.toString(2));//binary '1011'
 console.log(a.toString(8));//octal '13'
 console.log(a.toString(16));//hexadecimal 'b'
+
+console.log("------------------------------------");
+
+//Binary to Decimal,Octal,Hexadecimal
+let b = 0b1011;// 0b defines it is a binary number
+console.log(b.toString(10));//decimal '11'
+console.log(b.toString(8));//octal '13'
+console.log(b.toString(16));//hexadecimal 'b'
