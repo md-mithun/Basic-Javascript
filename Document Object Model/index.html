@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .js-animation {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background: green;
+        }
+
+        .animate {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- for animation  -->
+    <div class="js-animation">
+        <div class="animate"></div>
+    </div>
+    <button onclick="animation()">Animate</button>
+
+    <!-- for from validation DOM -->
+    <form name="frname" onsubmit="formValid()">
+        <input type="number" name="inputname" id="name" placeholder="Enter number 1-10">
+        <input type="submit" value="submit">
+        <p id="form-valid-result">-</p>
+    </form>
+
+    <!-- for basic dom -->
+    <h1 id="demo">Javascript DOM-1</h1>
+    <h1 id="demo">Javascript DOM-2</h1>
+    <button id="btn" class="btn">Click me</button>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

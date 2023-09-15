@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        button {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<!-- onload event -->
+
+<body onload="load()">
+    <hr>
+
+    <!--onclick and onmouseover events-->
+    <div style="background-color: rgb(163, 105, 105);margin:20px">
+        <h3>Onclick and Onmouseover</h3>
+        <button onclick="this.innerHTML='changed'">Click me to make change</button>
+        <button onmouseover="this.innerHTML='changed'" on>hover me to make change</button>
+    </div>
+
+
+    <!-- onchange event -->
+    <div style="background-color: rgb(130, 105, 163);margin:20px; padding: 20px;">
+        <h3>Onchange</h3>
+        <label for="text">Onchange:</label>
+        <input type="text" name="text" placeholder="Onchange text box" id="textInput" onchange="change('changed')">
+    </div>
+
+
+    <!-- event-listener -->
+    <div style="background-color: rgb(159, 163, 105);margin:20px; padding: 20px;">
+        <button class="listen">Your event</button>
+    </div>
+
+    <!-- Event Bubbling or Event Capturing -->
+    <div class="super" style="background-color: rgb(130, 200, 100);margin:20px; padding: 20px;">
+        <div class="sub" style="border:2px solid black ;text-align: center;padding:5px;cursor: pointer;">Click</div>
+    </div>
+
+
+
+    <script src="./events.js"></script>
+</body>
+
+</html>
