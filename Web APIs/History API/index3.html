@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This is third page</h1>
+    <button onclick="myFunction()">Go Back</button>
+    <button onclick="myFunction(2)">Go Back to 2step</button>
+    <script>
+        function myFunction(x) {
+            if (x) {
+                window.history.go(-x);//minus for back ,plus for forward
+            } else {
+                window.history.back();
+            }
+        }
+    </script>
+</body>
+
+</html>

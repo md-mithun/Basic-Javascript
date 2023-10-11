@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local & Session storage</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Welcome</h1>
+    <button onclick="storage('l')">set local storage</button>
+    <button onclick="storage('s')">set session storage</button>
+    <button onclick="alert(get('l'))">get local storage</button>
+    <button onclick="alert(get('s'))">get session storage</button>
+    <button onclick="removeItem('name')">Remove item</button>
+    <script>
+        function storage(mode) {
+            if (mode == 'l') {
+                localStorage.setItem('name', 'Mithun');
+            }
+            if (mode == 's') {
+                sessionStorage.setItem('name', 'Maryaam');
+            }
+        }
+        function get(mode) {
+            if (mode == 'l') {
+                return localStorage.getItem('name');
+            } else if (mode == 's') {
+                return sessionStorage.getItem('name');
+            }
+        }
+        function removeItem(name) {
+            localStorage.removeItem(name)
+            sessionStorage.removeItem(name)
+        }
+    </script>
+</body>
+
+</html>

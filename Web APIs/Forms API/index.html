@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Api</title>
+</head>
+
+<body>
+    <input type="number" id="input" min="1" max="20" required>
+    <button onclick="formFunction()">Click me</button>
+    <p id="msg"></p>
+
+    <script>
+        const inputField = document.getElementById('input');
+        const msg = document.getElementById('msg');
+        function formFunction() {
+            // if (!inputField.checkValidity()) { 
+            //     msg.innerHTML=inputField.validationMessage;
+            // }else{
+            //     msg.innerHTML=inputField.value;
+            // }
+            //##---set Custom validationMessage ---##
+            if (inputField.validity.rangeOverflow) {
+                msg.innerHTML = 'Range overflow occured';
+            } else if (inputField.validity.rangeUnderflow) {
+                msg.innerHTML = 'Range underflow occured';
+            } else if (inputField.validity.valueMissing) {
+                msg.innerHTML = 'Value are missing';
+            } else {
+                msg.innerHTML = 'Input ok!'
+            }
+        }
+    </script>
+</body>
+
+</html>
