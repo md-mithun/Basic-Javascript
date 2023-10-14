@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation</title>
+</head>
+
+<body>
+    <h1>Web Geolocation API</h1>
+    <button onclick="(getLocation())">Get Location</button>
+    <p id="demo"></p>
+
+    <script>
+        //   Latitude(অক্ষাংশ) Longitude(দ্রাঘিমাংশ)
+        const demo = document.getElementById('demo');
+        function getLocation() {
+            if (navigator.geolocation) {
+                // navigator.geolocation.getCurrentPosition(showPosition,showError);//showPosition is a call back function
+                navigator.geolocation.watchPosition(showPosition, showError);//showPosition is a call back function
+            } else {
+                demo.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+        function showPosition(position) {
+            demo.innerHTML = `অক্ষাংশ=${position.coords.latitude}</br>দ্রাঘিমাংশ=${position.coords.longitude}`
+        }
+        function showError(error) {
+            demo.innerHTML = error.message;
+        }
+    </script>
+</body>
+
+</html>

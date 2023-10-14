@@ -1,0 +1,4 @@
+Iam from Text.txt file;
+The Fetch API interface allows web browser to make HTTP requests to web servers.
+
+😀 No need for XMLHttpRequest anymore.
